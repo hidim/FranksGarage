@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksGarage", "FranksGarage\FranksGarage.csproj", "{E36E3AD0-D687-4C6C-A753-E98F34E074E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksGarage.Model", "FranksGarage.Model\FranksGarage.Model.csproj", "{DC405AC9-5136-4744-97CB-338C40558DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksGarage.DataAPI", "FranksGarage.DataAPI\FranksGarage.DataAPI.csproj", "{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E36E3AD0-D687-4C6C-A753-E98F34E074E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E36E3AD0-D687-4C6C-A753-E98F34E074E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E36E3AD0-D687-4C6C-A753-E98F34E074E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E36E3AD0-D687-4C6C-A753-E98F34E074E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC405AC9-5136-4744-97CB-338C40558DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC405AC9-5136-4744-97CB-338C40558DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC405AC9-5136-4744-97CB-338C40558DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC405AC9-5136-4744-97CB-338C40558DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
