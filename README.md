@@ -10,3 +10,6 @@ For Phase 1;
 Phase 1 continue: 
 - Added React / Typescript project for UI
 - Added Bootstrap functionality
+
+End of Phase 1:
+- Populating all vehicles from warehouses.
