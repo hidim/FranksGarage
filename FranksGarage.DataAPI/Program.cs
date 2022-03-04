@@ -1,9 +1,20 @@
 using FranksGarage.DataAPI.Data;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Serilog;
 
+var AllowCORSOrigins = "_allowCORSOrigins";
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: AllowCORSOrigins,
+                      corsBuilder =>
+                      {
+                          corsBuilder.WithOrigins(builder.Configuration.GetValue<string>("AllowedCORSOrigin").Split(','));
+                      });
+});
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -40,6 +51,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(AllowCORSOrigins);
 
 app.UseAuthorization();
 

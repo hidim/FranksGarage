@@ -8,20 +8,20 @@ namespace FranksGarage.DataAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WarehouseController : ControllerBase
+    public class VehiclesController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        private readonly ILogger<WarehouseController> _logger;
+        private readonly ILogger<VehiclesController> _logger;
 
-        public WarehouseController(ILogger<WarehouseController> logger, ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
+        public VehiclesController(ILogger<VehiclesController> logger, ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _logger = logger;
             _context = context;
             _webHostEnvironment = webHostEnvironment;
         }
 
-        [HttpGet(Name = "GetWarehouses")]
+        [HttpGet(Name = "GetVehicles")]
         public IEnumerable<VehiclesModel> Get()
         {
             if (_context == null)
