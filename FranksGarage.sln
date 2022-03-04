@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksGarage.Model", "FranksGarage.Model\FranksGarage.Model.csproj", "{DC405AC9-5136-4744-97CB-338C40558DEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FranksGarage.Model", "FranksGarage.Model\FranksGarage.Model.csproj", "{DC405AC9-5136-4744-97CB-338C40558DEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksGarage.DataAPI", "FranksGarage.DataAPI\FranksGarage.DataAPI.csproj", "{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FranksGarage.DataAPI", "FranksGarage.DataAPI\FranksGarage.DataAPI.csproj", "{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "FranksGarage", "FranksGarage\FranksGarage.esproj", "{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,12 @@ Global
 		{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF8E73DF-CC33-455C-8E0D-EA9D60C98DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
