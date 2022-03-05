@@ -13,3 +13,11 @@ Phase 1 continue:
 
 End of Phase 1:
 - Populating all vehicles from warehouses.
+
+_____________________________________________________________
+Phase 2;
+- Redesigned vehicle list,
+- Added IsLicensed filter to the results
+- Vehicle Proxy Model Added
+- Added GetById in Vehicles controller
+- Added Google Maps support.
