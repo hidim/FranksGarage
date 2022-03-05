@@ -57,6 +57,7 @@ namespace FranksGarage.DataAPI.Controllers
 
                 VehicleProxyModel vehicleProxyModel = new VehicleProxyModel()
                 {
+                    Id = vehicle.Id,
                     VehicleInsertedDate = vehicle.InsertedDate,
                     VehicleIsLicensed = vehicle.IsLicensed,
                     VehicleMake = vehicle.Make,

@@ -2,6 +2,7 @@
 {
     public class VehicleProxyModel
     {
+        public int Id { get; set; }
         public string VehicleMake { get; set; } = string.Empty;
         public string VehicleModel { get; set; } = string.Empty;
         public int VehicleModelYear { get; set; }

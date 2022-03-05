@@ -1,12 +1,17 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import { Container, Row, Col, ListGroup, ListGroupItem, Badge, Card } from "react-bootstrap";
+import { Container, Row, Col, ListGroup, ListGroupItem, Badge, Card, Button } from "react-bootstrap";
 import Vehicles from "../Api/Vehicles";
 import IVehicleModel from '../Model/VehicleModel';
 import IVehicleProxyModel from '../Model/VehicleProxyModel';
 import moment from 'moment';
 
-const VehicleList: React.FC = () => {
+type Props = {
+    addToCart: (clickedItem: IVehicleProxyModel) => void;
+};
+
+const VehicleList: React.FC<Props> = ({ addToCart }) => {
     const initialVehicleProxy = {
+        id: null,
         vehicleMake: "",
         vehicleModel: "",
         vehicleInsertedDate: new Date(),
@@ -96,7 +101,7 @@ const VehicleList: React.FC = () => {
                                 <ListGroupItem>Inserted Date: {moment(vehicleProxy.vehicleInsertedDate, "YYYY-MM-DD").format("DD-MM-YYYY")}</ListGroupItem>
                             </ListGroup>
                             <Card.Body>
-                                <Card.Link href="#">Add to chart</Card.Link>
+                                <Button className="primary" onClick={() => addToCart(vehicleProxy)}>Add to chart</Button>
                             </Card.Body>
                         </Card>)
                         : (

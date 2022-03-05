@@ -1,4 +1,5 @@
 export default interface IVehicleProxyModel {
+    id: number | any,
     vehicleMake: string,
     vehicleModel: string,
     vehicleInsertedDate: Date,
