@@ -1,6 +1,7 @@
 # FranksGarage
 Frank's second hand car garage
 
+## Change Log
 For Phase 1;
 - Added Data API layer,
 - Added SqlLite DB with encyription
@@ -13,7 +14,6 @@ Phase 1 continue:
 
 End of Phase 1:
 - Populating all vehicles from warehouses.
-
 _____________________________________________________________
 Phase 2;
 - Redesigned vehicle list,
@@ -21,3 +21,9 @@ Phase 2;
 - Vehicle Proxy Model Added
 - Added GetById in Vehicles controller
 - Added Google Maps support.
+_____________________________________________________________
+Phase 3;
+- Added Shopping Cart,
+- Vehicle Details, you can add to cart
+- In cart you can remove from cart
+- Cart shows total amount
