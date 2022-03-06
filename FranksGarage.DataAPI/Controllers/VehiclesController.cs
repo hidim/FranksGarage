@@ -8,7 +8,7 @@ namespace FranksGarage.DataAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class VehiclesController : ControllerBase
+    public class VehiclesController : ControllerBase, IVehiclesController
     {
         private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
@@ -43,13 +43,13 @@ namespace FranksGarage.DataAPI.Controllers
         [HttpGet("{id}")]
         public VehicleProxyModel Get(int id)
         {
-            if(id < 0)
+            if (id < 0)
                 return new VehicleProxyModel();
 
             if (_context == null)
                 return new VehicleProxyModel();
 
-            if(_context.VehiclesModel.Any(_t=>_t.Id == id))
+            if (_context.VehiclesModel.Any(_t => _t.Id == id))
             {
                 var vehicle = _context.VehiclesModel.AsNoTracking().Single(_t => _t.Id == id);
                 var car = _context.CarsModel.AsNoTracking().Single(_t => _t.Vehicles.Contains(vehicle));
@@ -80,7 +80,7 @@ namespace FranksGarage.DataAPI.Controllers
         {
             var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "App_Data\\warehouses.json");
 
-            List<WarehouseModel> warehouseModels = JsonConvert.DeserializeObject<List<WarehouseModel>>(System.IO.File.ReadAllText(filePath).Replace("\n","").Replace("\\", "")) ?? new List<WarehouseModel>();
+            List<WarehouseModel> warehouseModels = JsonConvert.DeserializeObject<List<WarehouseModel>>(System.IO.File.ReadAllText(filePath).Replace("\n", "").Replace("\\", "")) ?? new List<WarehouseModel>();
 
             if (warehouseModels is not null)
             {

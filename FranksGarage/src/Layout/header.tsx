@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import ShoppingChart from "../Data/ShoppingChart";
 import IVehicleProxyModel from "../Model/VehicleProxyModel";
 
-type Props = {
+export interface Props {
     cartItems: IVehicleProxyModel[];
     removeFromCart: (id: number) => void;
 };

@@ -29,10 +29,10 @@ const App: React.FC = () => {
     };
 
     return (
-        <>
+        <div className="BaseApp">
             <Header cartItems={cartItems} removeFromCart={handleRemoveFromCart} />
             <VehiclesList addToCart={handleAddToCart} />
-        </>
+        </div>
     );
 }
 

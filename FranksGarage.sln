@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FranksGarage.DataAPI", "Fra
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "FranksGarage", "FranksGarage\FranksGarage.esproj", "{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FranksGarage.Data.API.Test", "FranksGarage.Data.API.Test\FranksGarage.Data.API.Test.csproj", "{ED1932B0-D466-4C7D-9482-68A93CB30C94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C4789AA0-DF95-486C-86C4-169EB5E6A6C2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ED1932B0-D466-4C7D-9482-68A93CB30C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1932B0-D466-4C7D-9482-68A93CB30C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1932B0-D466-4C7D-9482-68A93CB30C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1932B0-D466-4C7D-9482-68A93CB30C94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
